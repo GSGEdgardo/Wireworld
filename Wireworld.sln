@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35219.272
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wireworld", "Wireworld.csproj", "{97C32607-5C2D-4818-84EE-C4A2809A55EA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{97C32607-5C2D-4818-84EE-C4A2809A55EA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{97C32607-5C2D-4818-84EE-C4A2809A55EA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{97C32607-5C2D-4818-84EE-C4A2809A55EA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{97C32607-5C2D-4818-84EE-C4A2809A55EA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1F1CD245-2C2D-43AD-8EB7-698DC1B1B1BD}
+	EndGlobalSection
+EndGlobal
