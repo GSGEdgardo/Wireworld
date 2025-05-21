@@ -7,8 +7,8 @@ namespace Wireworld.WireworldLogic
         // Es preferible usar un array 2D en vez de una lista de listas,
         // ya que es más eficiente para matrices de tamaño estáticas
         private CellState[,] grid;
-        private int Rows => grid.GetLength(0);
-        private int Cols => grid.GetLength(1);
+        public int Rows => grid.GetLength(0);
+        public int Cols => grid.GetLength(1);
         
         // Método para inicializar la cuadrícula
         public Grid(CellState[,] initialGrid)
@@ -34,7 +34,7 @@ namespace Wireworld.WireworldLogic
         public static Grid FromMatrix(List<List<CellState>> input)
         {
             int rows = input.Count;
-            int cols = input.Count;
+            int cols = input[0].Count;
             var data = new CellState[rows, cols];
 
             for (int y = 0; y < rows; y++) 
@@ -84,7 +84,7 @@ namespace Wireworld.WireworldLogic
         {
             return s.Trim().ToLower() switch
             {
-                " " or "empty" => CellState.Empty,
+                "" or " " or "empty" => CellState.Empty,
                 "#" or "c" or "conductor" => CellState.Conductor,
                 "h" or "head" => CellState.ElectronHead,
                 "t" or "tail" => CellState.ElectronTail,
